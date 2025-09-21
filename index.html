@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft Earth Revival</title>
+  <style>
+    :root {
+      --bg-dark: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --accent-green: #4caf50;
+      --accent-blue: #2196f3;
+      --text-light: #f0f0f0;
+      --text-muted: #aaa;
+      --radius: 16px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--accent-green);
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-green);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--accent-green);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .timeline {
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline li {
+      background: var(--bg-card);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 6px solid var(--accent-green);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1976d2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #111;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .unavailable {
+      color: #f44336;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 Earth Revival</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#docs">Docs & Tips</a>
+      <a href="#releases">Releases</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <div class="card">
+      <p>
+        Minecraft Earth Revival is a <strong>fan project</strong> built in <strong>Godot Engine</strong>.  
+        Our goal is to bring back the spirit of <em>Minecraft Earth</em>, while adding new features, modern platform support, and an active community.
+      </p>
+      <p class="unavailable">⚠️ Currently not available – no source code or builds yet.</p>
+    </div>
+  </section>
+
+  <section id="docs">
+    <h2>Docs & Tips</h2>
+    <div class="card">
+      <p>🚧 Documentation is under construction. Development logs, setup guides, and tips will be published here once the first prototype is ready.</p>
+      <p class="unavailable">Nothing available yet.</p>
+    </div>
+  </section>
+
+  <section id="releases">
+    <h2>Release Timeline</h2>
+    <ul class="timeline">
+      <li><strong>November 10, 2025:</strong> Beta & Source Code release on GitHub</li>
+      <li><strong>February 2026:</strong> First official release</li>
+      <li><strong>Future:</strong> Public updates, community content, and AR features</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Links</h2>
+    <div class="card">
+      <p>👉 Follow development on GitHub:  
+        <a href="https://github.com/your-username/minecraft-earth-revival" target="_blank" class="btn">GitHub Repo</a>
+      </p>
+      <p>💬 Discord community: <span class="unavailable">Coming soon</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>⚠️ This is a fan project and is not affiliated with Mojang or Microsoft.</p>
+    <p>&copy; 2025 Minecraft Earth Revival Team</p>
+  </footer>
+
+  <script
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
